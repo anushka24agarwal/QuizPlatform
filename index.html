@@ -6,7 +6,7 @@
         <title>Awesome Quiz App</title>
         <link rel="stylesheet" href="style.css">
         <!-- font awesome cdn link for icons-->
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     </head>
     <body>
         <div class="start_btn"><button>Start Quiz</button></div>    <!--Start button-->
@@ -37,10 +37,10 @@
                 </header>
                 <section>
                     <div class="que_text">
-                        <span>Who was known as Iron man of India?</span>    
+                        {% comment %} <span>Who was known as Iron man of India?</span>     {% endcomment %}
                     </div>
                     <div class="option_list">
-                        <div class="option">
+                        {% comment %} <div class="option">
                             <span>Govind Ballabh Pant</span>
                             <div class="icon cross"><i class="fas fa-times"></i></div>
                         </div>
@@ -55,17 +55,36 @@
                         <div class="option">
                             <span>Sardar Vallabhbhai Patel</span>
                             <div class="icon tick"><i class="fas fa-check"></i></div>
-                        </div>  
+                        </div>   {% endcomment %}
                     </div>
                 </section>
                 
                 <!--Quiz box footer-->
                 <footer>
                     <div class="total_que">
-                        <span><p>2</p>of<p>5</p>questions</span>
+                        {% comment %} <span><p>2</p>of<p>5</p>questions</span> {% endcomment %}
                     </div>
                     <button class="next_btn">Next Que</button>
                 </footer>
+            </div>
+            
+            <!--Result box-->
+            <div class="result_box">
+                <div class="icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="completed_text">You have completed the Quiz!</div>
+                <div class="score_text">
+                    {% comment %} <span> and sorry you got only <p>2</p>out of <p>5</p></span> {% endcomment %}
+                </div>
+                <div class="buttons">
+                    <button class="restart">Replay Quiz</button>
+                    <button class="quit">Quit Quiz</button>
+                </div>
+            </div>
+
+            <script src="js/script.js"></script>
+            <script src="js/questions.js"></script>
 
 
     </body>
