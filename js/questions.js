@@ -3,7 +3,7 @@ let questions=[
     {
         numb:1,
         question: "Who was known as Iron man of India?",
-        answers: "Sardar Vallabhbhai Patel",
+        answer: "Sardar Vallabhbhai Patel",
         options: [
             "Govind Ballabh Pant",
             "Jawaharlal Nehru",
@@ -14,7 +14,7 @@ let questions=[
     {
         numb:2,
         question: "The Indian to beat the computers in mathematical wizardry is",
-        answers: "Shakunthala Devi",
+        answer: "Shakunthala Devi",
         options: [
             "Ramanujam",
             "Rina Panigrahi",
@@ -25,7 +25,7 @@ let questions=[
     {
         numb:3,
         question: "Professor Amartya Sen is famous in which of the fields?",
-        answers: "Economics",
+        answer: "Economics",
         options: [
             "Biochemistry",
             "Electronics",
@@ -36,7 +36,7 @@ let questions=[
     {
         numb:4,
         question: "Which of the following was Satyajit Ray associated with?",
-        answers: "Film Direction",
+        answer: "Film Direction",
         options: [
             "Classical music",
             "Commercial art",
@@ -47,7 +47,7 @@ let questions=[
     {
         numb:5,
         question: "Amjad Ali Khan is associated with which of the following musical instruments?",
-        answers: "Sarod",
+        answer: "Sarod",
         options: [
             "Veena",
             "Sarod",
@@ -58,7 +58,7 @@ let questions=[
     {
         numb:6,
         question: "Ms. Bachendri Pal had undertaken a unique expedition for focusing attention on which of these?",
-        answers: "Sprit of Adventure",
+        answer: "Sprit of Adventure",
         options: [
             "One Nation one Family",
             "The Girl Child",
@@ -69,7 +69,7 @@ let questions=[
     {
         numb:7,
         question: "R. K. Laxman is a renowned",
-        answers: "Cartoonist",
+        answer: "Cartoonist",
         options: [
             "Dance master",
             "Writer",
@@ -80,7 +80,7 @@ let questions=[
     {
         numb:8,
         question: "Who is the Flying Sikh of India?",
-        answers: "Milkha singh",
+        answer: "Milkha singh",
         options: [
             "Mohinder Singh",
             "Joginder Singh",
@@ -91,7 +91,7 @@ let questions=[
     {
         numb:9,
         question: "Bismillah Khan was associated with?",
-        answers: "Shehnai",
+        answer: "Shehnai",
         options: [
             "Sarod",
             "Shehnai",
@@ -102,13 +102,12 @@ let questions=[
     {
         numb:10,
         question: "Who is known as the 'Lady with the Lamp'?",
-        answers: "Florence Nightingale",
+        answer: "Florence Nightingale",
         options: [
             "Florence Nightingale",
             "Sarojini Naidu",
             "Indira Gandhi",
             "Joan of Arc"
         ]
-    },
-    
-]
+    },  
+];

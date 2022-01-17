@@ -1,91 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Awesome Quiz App</title>
-        <link rel="stylesheet" href="style.css">
-        <!-- font awesome cdn link for icons-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    </head>
-    <body>
-        <div class="start_btn"><button>Start Quiz</button></div>    <!--Start button-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Quiz App </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="Blue_square_Q.jpg" rel="icon">
+    <!-- FontAweome CDN Link for Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <!-- start Quiz button -->
+    <div class="start_btn"><button>Start Quiz</button></div>
 
-        <div class="info_box">
-            <div class="info_title">
-                <span>Some Rules of this Quiz</span>
-            </div>
-            <div class="info_list">
-                <div class="info">1. You will have only <span>15 seconds</span> to answer the question.</div>
-                <div class="info">2. Once you select the answer, you can't reselect.</div>
-                <div class="info">3. You can't exit while quiz is going.</div>
-                <div class="info">4. You'll get points on the basis of correct answer.</div>
-            </div>
-            <div class="buttons">
-                <button class="quit">Exit Quiz</button>
-                <button class="restart">Continue</button>
-            </div>
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Rules of this Quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15 seconds</span> per question.</div>
+            <div class="info">2. Once you select your answer, it can't be undone.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            <div class="info">5. You'll get <span>1 point</span> on the basis of your correct answers.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
 
-            <!--Quiz box-->
-            <div class="quiz_box">
-                <header>
-                    <div class="title">Awesome Quiz App </div>
-                    <div class="timer">
-                        <div class="time_text">Time Left</div>
-                        <div class="timer_sec">15</div>
-                    </div>
-                </header>
-                <section>
-                    <div class="que_text">
-                        {% comment %} <span>Who was known as Iron man of India?</span>     {% endcomment %}
-                    </div>
-                    <div class="option_list">
-                        {% comment %} <div class="option">
-                            <span>Govind Ballabh Pant</span>
-                            <div class="icon cross"><i class="fas fa-times"></i></div>
-                        </div>
-                        <div class="option">
-                            <span>Jawaharlal Nehru</span>
-                            <div class="icon cross"><i class="fas fa-times"></i></div>
-                        </div>  
-                        <div class="option">
-                            <span>Subhash Chandra Bose</span>
-                            <div class="icon cross"><i class="fas fa-times"></i></div>
-                        </div>  
-                        <div class="option">
-                            <span>Sardar Vallabhbhai Patel</span>
-                            <div class="icon tick"><i class="fas fa-check"></i></div>
-                        </div>   {% endcomment %}
-                    </div>
-                </section>
-                
-                <!--Quiz box footer-->
-                <footer>
-                    <div class="total_que">
-                        {% comment %} <span><p>2</p>of<p>5</p>questions</span> {% endcomment %}
-                    </div>
-                    <button class="next_btn">Next Que</button>
-                </footer>
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Awesome Quiz Application</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">15</div>
             </div>
-            
-            <!--Result box-->
-            <div class="result_box">
-                <div class="icon">
-                    <i class="fas fa-crown"></i>
-                </div>
-                <div class="completed_text">You have completed the Quiz!</div>
-                <div class="score_text">
-                    {% comment %} <span> and sorry you got only <p>2</p>out of <p>5</p></span> {% endcomment %}
-                </div>
-                <div class="buttons">
-                    <button class="restart">Replay Quiz</button>
-                    <button class="quit">Quit Quiz</button>
-                </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!--question from JavaScript -->
             </div>
+            <div class="option_list">
+                <!-- options from JavaScript -->
+            </div>
+        </section>
 
-            <script src="js/script.js"></script>
-            <script src="js/questions.js"></script>
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!--  Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
 
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+            <!--Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
 
-    </body>
+    <!-- inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!--  coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+</body>
 </html>
